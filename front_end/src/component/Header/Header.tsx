@@ -41,7 +41,9 @@ function Header() {
 
   return (
     <AppBar position="static">
-      <Container maxWidth="xl"></Container>
+      <Container maxWidth="xl">
+        <Toolbar disableGutters></Toolbar>
+      </Container>
     </AppBar>
   );
 }
