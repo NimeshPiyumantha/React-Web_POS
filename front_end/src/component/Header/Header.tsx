@@ -42,7 +42,9 @@ function Header() {
   return (
     <AppBar position="static">
       <Container maxWidth="xl">
-        <Toolbar disableGutters></Toolbar>
+        <Toolbar disableGutters>
+          <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
+        </Toolbar>
       </Container>
     </AppBar>
   );
