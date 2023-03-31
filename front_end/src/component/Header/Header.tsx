@@ -39,6 +39,10 @@ function Header() {
     setAnchorElUser(null);
   };
 
-  return <AppBar position="static"></AppBar>;
+  return (
+    <AppBar position="static">
+      <Container maxWidth="xl"></Container>
+    </AppBar>
+  );
 }
 export default Header;
