@@ -39,8 +39,6 @@ function Header() {
     setAnchorElUser(null);
   };
 
-  return (
-    
-  );
+  return <AppBar position="static"></AppBar>;
 }
 export default Header;
