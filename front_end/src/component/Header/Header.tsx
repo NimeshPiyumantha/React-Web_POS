@@ -14,6 +14,7 @@ import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
 
 const pages = ["Home", "Customer", "Items", "Order", "OrderDetails"];
+const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 function Header() {
 
