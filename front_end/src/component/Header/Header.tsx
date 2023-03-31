@@ -24,6 +24,11 @@ function Header() {
     null
   );
 
+  const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
+    setAnchorElNav(event.currentTarget);
+  };
+
+
   return (
     
   );
