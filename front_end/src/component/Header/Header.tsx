@@ -17,6 +17,9 @@ const pages = ["Home", "Customer", "Items", "Order", "OrderDetails"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 function Header() {
+  const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
+    null
+  );
 
   return (
     
