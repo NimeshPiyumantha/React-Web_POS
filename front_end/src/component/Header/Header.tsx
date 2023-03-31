@@ -35,7 +35,9 @@ function Header() {
     setAnchorElNav(null);
   };
 
-
+  const handleCloseUserMenu = () => {
+    setAnchorElUser(null);
+  };
 
   return (
     
