@@ -1,8 +1,7 @@
-import React from "react";
 import { ThemeProvider, createTheme, styled } from "@mui/material/styles";
-import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Unstable_Grid2";
 import Box from "@mui/material/Box";
+import SettingsIcon from "@mui/icons-material/Settings";
 
 const theme = createTheme({
   palette: {
@@ -158,6 +157,22 @@ export default function Home() {
               >
                 vs. last week
               </Box>
+            </Box>
+          </ThemeProvider>
+        </Grid>
+        <Grid lg={3} md={3} sm={6} xs={12}>
+          <ThemeProvider theme={theme}>
+            <Box
+              sx={{
+                bgcolor: "background.paper",
+                boxShadow: 2,
+                borderRadius: 2,
+                p: 2,
+                minWidth: 180,
+              }}
+            >
+              <Box sx={{ color: "text.secondary" }}>Order Count</Box>
+              <SettingsIcon sx={{ fontSize: 34, padding: 1 }} />
             </Box>
           </ThemeProvider>
         </Grid>
