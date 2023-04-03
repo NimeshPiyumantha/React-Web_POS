@@ -15,17 +15,17 @@ const Item = styled(Paper)(({ theme }) => ({
 export default function Home() {
   return (
     <Box sx={{ width: "100%" }} mt={5}>
-      <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
-        <Grid xs={3}>
+      <Grid container margin={3} rowSpacing={2} columnSpacing={3}>
+        <Grid lg={3} md={3} sm={6} xs={12}>
           <Item>1</Item>
         </Grid>
-        <Grid xs={3}>
+        <Grid lg={3} md={3} sm={6} xs={12}>
           <Item>2</Item>
         </Grid>
-        <Grid xs={3}>
+        <Grid lg={3} md={3} sm={6} xs={12}>
           <Item>3</Item>
         </Grid>
-        <Grid xs={3}>
+        <Grid lg={3} md={3} sm={6} xs={12}>
           <Item>4</Item>
         </Grid>
       </Grid>
