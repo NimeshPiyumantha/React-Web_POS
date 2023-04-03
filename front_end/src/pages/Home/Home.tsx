@@ -28,23 +28,25 @@ export default function Home() {
             <Box
               sx={{
                 bgcolor: "background.paper",
-                boxShadow: 1,
+                boxShadow: 2,
                 borderRadius: 2,
                 p: 2,
                 minWidth: 180,
               }}
             >
-              <Box sx={{ color: "text.secondary" }}>Sessions</Box>
+              <Box sx={{ color: "text.secondary" }}>Customer Count</Box>
               <Box
+                id="txtCustomerCount"
                 sx={{
                   color: "text.primary",
                   fontSize: 34,
                   fontWeight: "medium",
                 }}
               >
-                98.3 K
+                0
               </Box>
               <Box
+                id="txtCustomerCountPracentage"
                 sx={{
                   color: "success.dark",
                   display: "inline",
