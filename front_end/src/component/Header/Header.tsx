@@ -12,7 +12,7 @@ import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
-import Home from "../../pages/Home/Home";
+import { NavLink } from "react-router-dom";
 
 // const pages = ["Home", "Customer", "Items", "Order", "OrderDetails"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
@@ -91,14 +91,32 @@ function Header() {
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
               sx={{
-                display: { xs: "block", md: "none",},
+                display: { xs: "block", md: "none", },
               }}
             >
-                  <Typography textAlign="center" pt={1} pr={2} pl={2}>Home</Typography>
-                  <Typography textAlign="center" pt={1} pr={2} pl={2}>Customer</Typography>
-                  <Typography textAlign="center" pt={1} pr={2} pl={2}>Item</Typography>
-                  <Typography textAlign="center" pt={1} pr={2} pl={2}> Place Order</Typography>
-                  <Typography textAlign="center" pt={1} pr={2} pl={2}> Order Details</Typography>
+              <Typography textAlign="center" pt={1} pr={2} pl={2}>
+                <NavLink
+                  to={"/home"}
+                  className={({ isActive }) =>
+                    isActive ? activeLink : normalLink
+                  }
+                >
+                  <h4>Home</h4>
+                </NavLink>
+              </Typography>
+              <Typography textAlign="center" pt={1} pr={2} pl={2}>
+                <NavLink
+                  to={"/customer"}
+                  className={({ isActive }) =>
+                    isActive ? activeLink : normalLink
+                  }
+                >
+                  <h4>Customer</h4>
+                </NavLink>
+                </Typography>
+              <Typography textAlign="center" pt={1} pr={2} pl={2}>Item</Typography>
+              <Typography textAlign="center" pt={1} pr={2} pl={2}> Place Order</Typography>
+              <Typography textAlign="center" pt={1} pr={2} pl={2}> Order Details</Typography>
             </Menu>
           </Box>
           <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
@@ -121,41 +139,55 @@ function Header() {
             LOGO
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-           
-              <Button
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "white", display: "block" }}
-              >
+
+            <Button
+              onClick={handleCloseNavMenu}
+              sx={{ my: 2, color: "white", display: "block" }}
+            >
+             <NavLink
+                  to={"/home"}
+                  className={({ isActive }) =>
+                    isActive ? activeLink : normalLink
+                  }
+                >
                 Home
-              </Button>
+                </NavLink>
+            </Button>
 
-              <Button
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "white", display: "block" }}
-              >
-                Customer
-              </Button>
+            <Button
+              onClick={handleCloseNavMenu}
+              sx={{ my: 2, color: "white", display: "block" }}
+            >
+              <NavLink 
+                  to={"/customer"}
+                  className={({ isActive }) =>
+                    isActive ? activeLink : normalLink
+                  }
+                >
+                  Customer
+                </NavLink>
+            </Button>
 
-              <Button
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "white", display: "block" }}
-              >
-                Item
-              </Button>
+            <Button
+              onClick={handleCloseNavMenu}
+              sx={{ my: 2, color: "white", display: "block" }}
+            >
+              Item
+            </Button>
 
-              <Button
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "white", display: "block" }}
-              >
-                Place Order
-              </Button>
+            <Button
+              onClick={handleCloseNavMenu}
+              sx={{ my: 2, color: "white", display: "block" }}
+            >
+              Place Order
+            </Button>
 
-              <Button
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "white", display: "block" }}
-              >
-                Order Details
-              </Button>
+            <Button
+              onClick={handleCloseNavMenu}
+              sx={{ my: 2, color: "white", display: "block" }}
+            >
+              Order Details
+            </Button>
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
