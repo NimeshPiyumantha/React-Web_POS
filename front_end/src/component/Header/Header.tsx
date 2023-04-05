@@ -39,6 +39,9 @@ function Header() {
     setAnchorElUser(null);
   };
 
+  const activeLink = "border-b-2 cursor-pointer";
+  const normalLink = "cursor-pointer";
+  
   return (
     <AppBar position="static">
       <Container maxWidth="xl">
