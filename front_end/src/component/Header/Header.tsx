@@ -12,8 +12,9 @@ import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
+import Home from "../../pages/Home/Home";
 
-const pages = ["Home", "Customer", "Items", "Order", "OrderDetails"];
+// const pages = ["Home", "Customer", "Items", "Order", "OrderDetails"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 function Header() {
@@ -88,14 +89,14 @@ function Header() {
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
               sx={{
-                display: { xs: "block", md: "none" },
+                display: { xs: "block", md: "none",},
               }}
             >
-              {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
-                </MenuItem>
-              ))}
+                  <Typography textAlign="center" pt={1} pr={2} pl={2}>Home</Typography>
+                  <Typography textAlign="center" pt={1} pr={2} pl={2}>Customer</Typography>
+                  <Typography textAlign="center" pt={1} pr={2} pl={2}>Item</Typography>
+                  <Typography textAlign="center" pt={1} pr={2} pl={2}> Place Order</Typography>
+                  <Typography textAlign="center" pt={1} pr={2} pl={2}> Order Details</Typography>
             </Menu>
           </Box>
           <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
@@ -118,15 +119,41 @@ function Header() {
             LOGO
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-            {pages.map((page) => (
+           
               <Button
-                key={page}
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: "white", display: "block" }}
               >
-                {page}
+                Home
               </Button>
-            ))}
+
+              <Button
+                onClick={handleCloseNavMenu}
+                sx={{ my: 2, color: "white", display: "block" }}
+              >
+                Customer
+              </Button>
+
+              <Button
+                onClick={handleCloseNavMenu}
+                sx={{ my: 2, color: "white", display: "block" }}
+              >
+                Item
+              </Button>
+
+              <Button
+                onClick={handleCloseNavMenu}
+                sx={{ my: 2, color: "white", display: "block" }}
+              >
+                Place Order
+              </Button>
+
+              <Button
+                onClick={handleCloseNavMenu}
+                sx={{ my: 2, color: "white", display: "block" }}
+              >
+                Order Details
+              </Button>
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
