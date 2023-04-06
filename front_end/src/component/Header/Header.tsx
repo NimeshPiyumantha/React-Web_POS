@@ -119,6 +119,7 @@ function Header() {
               <Typography textAlign="center" pt={1} pr={2} pl={2}> Order Details</Typography>
             </Menu>
           </Box>
+          
           <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
           <Typography
             variant="h5"
