@@ -100,7 +100,6 @@ function Header() {
                   className={({ isActive }) =>
                     isActive ? activeLink : normalLink
                   }
-                  
                 >
                   <h4>Home</h4>
                 </NavLink>
