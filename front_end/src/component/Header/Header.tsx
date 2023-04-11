@@ -19,7 +19,6 @@ const settings = ["Profile", "Account", "Dashboard", "Logout"];
 const activeLink = "textDecoration:none, cursor-pointer";
 const normalLink = "cursor-pointer";
 
-
 function Header() {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
     null
