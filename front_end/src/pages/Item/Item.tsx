@@ -1,5 +1,12 @@
-import React from "react";
+import Header from "../../component/Header";
 
 export default function Item() {
-  return <div>Item</div>;
+  return (
+    <>
+      <Header />
+      <div>
+        <h1>item</h1>
+      </div>
+    </>
+  );
 }
