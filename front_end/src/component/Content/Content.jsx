@@ -1,4 +1,3 @@
-import React, { Component } from "react"
 import Home from "../../pages/Home/Home";
 import Customer from "../../pages/Customer/Customer";
 import Item from "../../pages/Item/Item";

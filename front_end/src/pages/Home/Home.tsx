@@ -1,4 +1,4 @@
-import { ThemeProvider, createTheme, styled } from "@mui/material/styles";
+import { ThemeProvider, createTheme } from "@mui/material/styles";
 import Grid from "@mui/material/Unstable_Grid2";
 import Box from "@mui/material/Box";
 import SettingsIcon from "@mui/icons-material/Settings";

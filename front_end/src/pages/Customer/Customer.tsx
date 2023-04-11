@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+
 import Header from "../../component/Header/Header";
 
 export default function Customer() {
