@@ -95,24 +95,10 @@ function Header() {
               }}
             >
               <Typography textAlign="center" pt={1} pr={2} pl={2}>
-                <NavLink
-                  to={"/home"}
-                  className={({ isActive }) =>
-                    isActive ? activeLink : normalLink
-                  }
-                >
-                  <h4>Home</h4>
-                </NavLink>
+                Home
               </Typography>
               <Typography textAlign="center" pt={1} pr={2} pl={2}>
-                <NavLink
-                  to={"/customer"}
-                  className={({ isActive }) =>
-                    isActive ? activeLink : normalLink
-                  }
-                >
-                  <h4>Customer</h4>
-                </NavLink>
+                Customer
               </Typography>
               <Typography textAlign="center" pt={1} pr={2} pl={2}>
                 Item
