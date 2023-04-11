@@ -16,8 +16,9 @@ import { NavLink } from "react-router-dom";
 
 // const pages = ["Home", "Customer", "Items", "Order", "OrderDetails"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
-const activeLink = "border-b-2 cursor-pointer";
+const activeLink = "textDecoration:none, cursor-pointer";
 const normalLink = "cursor-pointer";
+
 
 function Header() {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
