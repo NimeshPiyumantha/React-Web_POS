@@ -94,7 +94,7 @@ function Header() {
                 display: { xs: "block", md: "none" },
               }}
             >
-              
+
               <NavLink
               to={"/home"}
               className={({ isActive }) => (isActive ? activeLink : normalLink)}
@@ -104,21 +104,42 @@ function Header() {
               </Typography>
             </NavLink>
 
-              
-              <Typography textAlign="center" pt={1} pr={2} pl={2}>
+            <NavLink
+              to={"/customer"}
+              className={({ isActive }) => (isActive ? activeLink : normalLink)}
+            >
+            <Typography textAlign="center" pt={1} pr={2} pl={2}>
                 Customer
               </Typography>
-              <Typography textAlign="center" pt={1} pr={2} pl={2}>
+            </NavLink>
+
+            <NavLink
+              to={"/item"}
+              className={({ isActive }) => (isActive ? activeLink : normalLink)}
+            >
+           <Typography textAlign="center" pt={1} pr={2} pl={2}>
                 Item
               </Typography>
-              <Typography textAlign="center" pt={1} pr={2} pl={2}>
-                {" "}
+            </NavLink>
+
+            <NavLink
+              to={"/place"}
+              className={({ isActive }) => (isActive ? activeLink : normalLink)}
+            >
+            <Typography textAlign="center" pt={1} pr={2} pl={2}>
                 Place Order
               </Typography>
-              <Typography textAlign="center" pt={1} pr={2} pl={2}>
-                {" "}
+            </NavLink>
+
+            <NavLink
+              to={"/orderDetail"}
+              className={({ isActive }) => (isActive ? activeLink : normalLink)}
+            >
+            <Typography textAlign="center" pt={1} pr={2} pl={2}>
                 Order Details
               </Typography>
+              
+            </NavLink>
             </Menu>
           </Box>
 
