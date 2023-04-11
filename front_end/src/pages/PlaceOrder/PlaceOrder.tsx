@@ -1,5 +1,12 @@
-import React from "react";
+import Header from "../../component/Header";
 
 export default function PlaceOrder() {
-  return <div>PlaceOrder</div>;
+  return (
+    <>
+      <Header />
+      <div>
+        <h1>Hi place</h1>
+      </div>
+    </>
+  );
 }
