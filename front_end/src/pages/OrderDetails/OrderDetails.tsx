@@ -5,7 +5,7 @@ export default function OrderDetails() {
     <>
       <Header />
       <div>
-        <h1>Hi order place</h1>
+        <h1>Hi order details</h1>
       </div>
     </>
   );
