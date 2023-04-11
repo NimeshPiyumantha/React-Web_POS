@@ -163,40 +163,53 @@ function Header() {
               </Button>
             </NavLink>
 
-            <Button
-              onClick={handleCloseNavMenu}
-              sx={{ my: 2, color: "white", display: "block" }}
+            <NavLink
+              to={"/customer"}
+              className={({ isActive }) => (isActive ? activeLink : normalLink)}
             >
-              <NavLink
-                to={"/customer"}
-                className={({ isActive }) =>
-                  isActive ? activeLink : normalLink
-                }
+              <Button
+                onClick={handleCloseNavMenu}
+                sx={{ my: 2, color: "white", display: "block" }}
               >
-                Customer
-              </NavLink>
-            </Button>
+                <h4>Customer</h4>
+              </Button>
+            </NavLink>
 
-            <Button
-              onClick={handleCloseNavMenu}
-              sx={{ my: 2, color: "white", display: "block" }}
+            <NavLink
+              to={"/item"}
+              className={({ isActive }) => (isActive ? activeLink : normalLink)}
             >
-              Item
-            </Button>
+              <Button
+                onClick={handleCloseNavMenu}
+                sx={{ my: 2, color: "white", display: "block" }}
+              >
+                <h4>Item</h4>
+              </Button>
+            </NavLink>
 
-            <Button
-              onClick={handleCloseNavMenu}
-              sx={{ my: 2, color: "white", display: "block" }}
+            <NavLink
+              to={"/place"}
+              className={({ isActive }) => (isActive ? activeLink : normalLink)}
             >
-              Place Order
-            </Button>
+              <Button
+                onClick={handleCloseNavMenu}
+                sx={{ my: 2, color: "white", display: "block" }}
+              >
+                <h4>Place Order</h4>
+              </Button>
+            </NavLink>
 
-            <Button
-              onClick={handleCloseNavMenu}
-              sx={{ my: 2, color: "white", display: "block" }}
+            <NavLink
+              to={"/orderDetail"}
+              className={({ isActive }) => (isActive ? activeLink : normalLink)}
             >
-              Order Details
-            </Button>
+              <Button
+                onClick={handleCloseNavMenu}
+                sx={{ my: 2, color: "white", display: "block" }}
+              >
+                <h4>Order Details</h4>
+              </Button>
+            </NavLink>
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
