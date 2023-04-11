@@ -44,13 +44,10 @@ function Header() {
 
   return (
     <AppBar position="static">
-      
       <Container maxWidth="xl">
-
         <Toolbar disableGutters>
-
           <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
-          
+
           <Typography
             variant="h6"
             noWrap
@@ -95,7 +92,7 @@ function Header() {
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
               sx={{
-                display: { xs: "block", md: "none", },
+                display: { xs: "block", md: "none" },
               }}
             >
               <Typography textAlign="center" pt={1} pr={2} pl={2}>
@@ -117,15 +114,23 @@ function Header() {
                 >
                   <h4>Customer</h4>
                 </NavLink>
-                </Typography>
-              <Typography textAlign="center" pt={1} pr={2} pl={2}>Item</Typography>
-              <Typography textAlign="center" pt={1} pr={2} pl={2}> Place Order</Typography>
-              <Typography textAlign="center" pt={1} pr={2} pl={2}> Order Details</Typography>
+              </Typography>
+              <Typography textAlign="center" pt={1} pr={2} pl={2}>
+                Item
+              </Typography>
+              <Typography textAlign="center" pt={1} pr={2} pl={2}>
+                {" "}
+                Place Order
+              </Typography>
+              <Typography textAlign="center" pt={1} pr={2} pl={2}>
+                {" "}
+                Order Details
+              </Typography>
             </Menu>
           </Box>
-          
+
           <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
-          
+
           <Typography
             variant="h5"
             noWrap
@@ -146,33 +151,30 @@ function Header() {
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+            <NavLink
+              to={"/home"}
+              className={({ isActive }) => (isActive ? activeLink : normalLink)}
+            >
+              <Button
+                onClick={handleCloseNavMenu}
+                sx={{ my: 2, color: "white", display: "block" }}
+              >
+                <h4>Home</h4>
+              </Button>
+            </NavLink>
 
             <Button
               onClick={handleCloseNavMenu}
               sx={{ my: 2, color: "white", display: "block" }}
             >
-             <NavLink
-                  to={"/home"}
-                  className={({ isActive }) =>
-                    isActive ? activeLink : normalLink
-                  }
-                >
-                Home
-                </NavLink>
-            </Button>
-
-            <Button
-              onClick={handleCloseNavMenu}
-              sx={{ my: 2, color: "white", display: "block" }}
-            >
-              <NavLink 
-                  to={"/customer"}
-                  className={({ isActive }) =>
-                    isActive ? activeLink : normalLink
-                  }
-                >
-                  Customer
-                </NavLink>
+              <NavLink
+                to={"/customer"}
+                className={({ isActive }) =>
+                  isActive ? activeLink : normalLink
+                }
+              >
+                Customer
+              </NavLink>
             </Button>
 
             <Button
@@ -195,7 +197,6 @@ function Header() {
             >
               Order Details
             </Button>
-
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
@@ -227,7 +228,6 @@ function Header() {
               ))}
             </Menu>
           </Box>
-          
         </Toolbar>
       </Container>
     </AppBar>
