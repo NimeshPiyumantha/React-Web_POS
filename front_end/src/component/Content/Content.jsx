@@ -1,9 +1,10 @@
-import React from "react";
+import React, { Component } from "react"
 import Home from "../../pages/Home/Home";
 import Customer from "../../pages/Customer/Customer";
 import Item from "../../pages/Item/Item";
 import PlaceOrder from "../../pages/PlaceOrder/PlaceOrder";
 import OrderDetails from "../../pages/OrderDetails/OrderDetails";
+import { Route, Routes } from "react-router-dom";
 
 export default function Content() {
   return (

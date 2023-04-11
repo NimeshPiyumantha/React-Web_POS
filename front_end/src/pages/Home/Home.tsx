@@ -2,6 +2,7 @@ import { ThemeProvider, createTheme, styled } from "@mui/material/styles";
 import Grid from "@mui/material/Unstable_Grid2";
 import Box from "@mui/material/Box";
 import SettingsIcon from "@mui/icons-material/Settings";
+import Header from "../../component/Header/Header";
 
 const theme = createTheme({
   palette: {
@@ -20,6 +21,8 @@ const theme = createTheme({
 
 export default function Home() {
   return (
+    <>
+    <Header />
     <Box sx={{ width: "100%" }} mt={5}>
       <Grid container margin={3} rowSpacing={2} columnSpacing={3}>
         <Grid lg={3} md={3} sm={6} xs={12}>
@@ -178,5 +181,6 @@ export default function Home() {
         </Grid>
       </Grid>
     </Box>
+    </>
   );
 }
