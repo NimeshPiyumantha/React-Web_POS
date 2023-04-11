@@ -1,5 +1,12 @@
-import React from "react";
+import Header from "../../component/Header";
 
 export default function OrderDetails() {
-  return <div>OrderDetails</div>;
+  return (
+    <>
+      <Header />
+      <div>
+        <h1>Hi order place</h1>
+      </div>
+    </>
+  );
 }
