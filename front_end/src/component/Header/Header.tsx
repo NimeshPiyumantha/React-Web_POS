@@ -94,9 +94,17 @@ function Header() {
                 display: { xs: "block", md: "none" },
               }}
             >
-              <Typography textAlign="center" pt={1} pr={2} pl={2}>
+              
+              <NavLink
+              to={"/home"}
+              className={({ isActive }) => (isActive ? activeLink : normalLink)}
+            >
+            <Typography textAlign="center" pt={1} pr={2} pl={2}>
                 Home
               </Typography>
+            </NavLink>
+
+              
               <Typography textAlign="center" pt={1} pr={2} pl={2}>
                 Customer
               </Typography>
