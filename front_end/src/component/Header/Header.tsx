@@ -15,7 +15,7 @@ import AdbIcon from "@mui/icons-material/Adb";
 import { NavLink } from "react-router-dom";
 
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
-const activeLink = "textDecoration:none, cursor-pointer";
+const activeLink = "border-b-2 cursor-pointer";
 const normalLink = "cursor-pointer";
 
 function Header() {
