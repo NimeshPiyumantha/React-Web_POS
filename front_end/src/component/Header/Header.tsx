@@ -14,7 +14,6 @@ import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
 import { NavLink } from "react-router-dom";
 
-// const pages = ["Home", "Customer", "Items", "Order", "OrderDetails"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 const activeLink = "textDecoration:none, cursor-pointer";
 const normalLink = "cursor-pointer";
