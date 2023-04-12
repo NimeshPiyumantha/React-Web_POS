@@ -62,9 +62,23 @@ export default function Customer() {
                   </Box>
                   <Box
                     sx={{
-                      mt: 3,
+                      color: "#2c3e50",
+                      pt: 1.5,
+                      pb: 1.5,
+                      pr: 2,
+                      pl: 2,
+                      borderRadius: 2,
+                      fontWeight: "bold",
+                      fontFamily: "Poppines",
+                      fontSize: 16,
+                    }}
+                  >
+                    Search Customer :
+                  </Box>
+                  <Box
+                    sx={{
                       color: "text.primary",
-                      fontSize: 34,
+                      fontSize: 28,
                       fontWeight: "medium",
                       textAlign: "center",
                     }}
