@@ -21,13 +21,13 @@ export default function Customer() {
   return (
     <>
       <Header />
-      <Box sx={{ width: "100%" }} mt={5}>
-        <Grid container spacing={5} margin={3}>
-          <Grid lg={3} md={3} sm={6} xs={12}>
+      <Box sx={{ width: "100%" }} mt={5} margin={1}>
+        <Grid container mt={3}>
+          <Grid lg={4.5} md={6} sm={10} xs={11}>
             <Box
               component="form"
               sx={{
-                "& > :not(style)": { m: 1, width: "25ch" },
+                "& > :not(style)": { m: 1, width: "100%" },
               }}
               noValidate
               autoComplete="off"
@@ -39,7 +39,6 @@ export default function Customer() {
                     bgcolor: "background.paper",
                     boxShadow: 2,
                     borderRadius: 2,
-                    minWidth: 280,
                   }}
                 >
                   <Box
@@ -63,7 +62,6 @@ export default function Customer() {
                     sx={{
                       color: "#2c3e50",
                       pt: 1.5,
-                      pb: 1.5,
                       pr: 2,
                       pl: 2,
                       borderRadius: 2,
@@ -77,13 +75,17 @@ export default function Customer() {
                   <Box
                     sx={{
                       color: "text.primary",
-                      fontSize: 20,
-                      fontWeight: "medium",
-                      textAlign: "center",
-                      pb:2,
+                      m: 2,
+                      pb: 2,
                     }}
                   >
                     <TextField
+                      sx={{
+                        width: 10/10,
+                        fontSize: 20,
+                        fontWeight: "bold",
+                        fontFamily: "Poppines",
+                      }}
                       id="searchCusId"
                       label="Input Name/NIC/Tp Here"
                       variant="outlined"
