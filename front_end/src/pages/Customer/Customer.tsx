@@ -76,7 +76,7 @@ export default function Customer() {
                     sx={{
                       color: "text.primary",
                       m: 2,
-                      pb: 2,
+                      
                     }}
                   >
                     <TextField
@@ -90,6 +90,18 @@ export default function Customer() {
                       label="Input Name/NIC/Tp Here"
                       variant="outlined"
                     />
+                  </Box>
+                  <Box
+                    sx={{
+                      color: "#2c3e50",
+                      m:2,
+                      borderRadius: 2,
+                      fontWeight: "bold",
+                      fontFamily: "Poppines",
+                      fontSize: 18,
+                    }}
+                  >
+                    Search Customer :
                   </Box>
                 </Box>
               </ThemeProvider>
