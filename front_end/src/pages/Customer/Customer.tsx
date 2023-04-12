@@ -31,12 +31,35 @@ export default function Customer() {
               }}
               noValidate
               autoComplete="off"
+            > <ThemeProvider theme={theme}>
+            <Box
+              sx={{
+                bgcolor: "background.paper",
+                boxShadow: 2,
+                borderRadius: 2,
+                p: 2,
+                minWidth: 180,
+              }}
             >
-              <TextField
+              <Box sx={{ color: "text.secondary" }}>Search Customer</Box>
+              <Box
+                id="txtItemsCount"
+                sx={{
+                  color: "text.primary",
+                  fontSize: 34,
+                  fontWeight: "medium",
+                }}
+              >
+               <TextField
                 id="outlined-basic"
                 label="Outlined"
                 variant="outlined"
               />
+              </Box>
+             
+            </Box>
+          </ThemeProvider>
+              
             </Box>
           </Grid>
         </Grid>
