@@ -39,7 +39,6 @@ export default function Customer() {
                     bgcolor: "background.paper",
                     boxShadow: 2,
                     borderRadius: 2,
-                    p: 3,
                     minWidth: 280,
                   }}
                 >
@@ -70,7 +69,7 @@ export default function Customer() {
                       borderRadius: 2,
                       fontWeight: "bold",
                       fontFamily: "Poppines",
-                      fontSize: 16,
+                      fontSize: 18,
                     }}
                   >
                     Search Customer :
@@ -78,14 +77,15 @@ export default function Customer() {
                   <Box
                     sx={{
                       color: "text.primary",
-                      fontSize: 28,
+                      fontSize: 20,
                       fontWeight: "medium",
                       textAlign: "center",
+                      pb:2,
                     }}
                   >
                     <TextField
-                      id="outlined-basic"
-                      label="Outlined"
+                      id="searchCusId"
+                      label="Input Name/NIC/Tp Here"
                       variant="outlined"
                     />
                   </Box>
