@@ -5,7 +5,7 @@ import { Grid, TextField, ThemeProvider, createTheme } from "@mui/material";
 const theme = createTheme({
   palette: {
     background: {
-      paper: "#fff",
+      paper: "#ecf0f1",
     },
     text: {
       primary: "#173A5E",
@@ -13,7 +13,7 @@ const theme = createTheme({
     },
     action: {
       active: "#001E3C",
-    },
+    }
   },
 });
 
@@ -37,17 +37,18 @@ export default function Customer() {
                 bgcolor: "background.paper",
                 boxShadow: 2,
                 borderRadius: 2,
-                p: 2,
-                minWidth: 180,
+                p: 3,
+                minWidth: 280,
               }}
             >
-              <Box sx={{ color: "text.secondary" }}>Search Customer</Box>
+              <Box sx={{ color: "#ecf0f1",bgcolor:'#e74c3c',pt:1.5,pb:1.5,pr:2,pl:2,borderRadius: 2,textAlign:'center',fontWeight:'bold',fontFamily:'Poppines', fontSize: 20 }}>Search Customer</Box>
               <Box
-                id="txtItemsCount"
                 sx={{
+                  mt:3,
                   color: "text.primary",
                   fontSize: 34,
                   fontWeight: "medium",
+                  textAlign:'center'
                 }}
               >
                <TextField
