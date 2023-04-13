@@ -81,7 +81,9 @@ export default function Customer() {
                   <Box
                     sx={{
                       color: "text.primary",
-                      m: 2,
+                      mt: 1.5,
+                      mr: 2,
+                      ml: 2,
                     }}
                   >
                     <TextField
@@ -99,7 +101,9 @@ export default function Customer() {
                   <Box
                     sx={{
                       color: "#2c3e50",
-                      m: 2,
+                    
+                      mr: 2,
+                      ml: 2,
                       borderRadius: 2,
                       fontWeight: "bold",
                       fontFamily: "Poppines",
@@ -107,8 +111,8 @@ export default function Customer() {
                       p: 2,
                     }}
                   >
-                    <Button variant="contained" color="success">
-                      save
+                    <Button variant="contained" color="success" size="medium" id="btnSaveCustomer">
+                      + New Customer
                     </Button>
                   </Box>
                 </Box>
