@@ -1,6 +1,12 @@
 import Box from "@mui/material/Box";
 import Header from "../../component/Header/Header";
-import { Grid, TextField, ThemeProvider, createTheme } from "@mui/material";
+import {
+  Button,
+  Grid,
+  TextField,
+  ThemeProvider,
+  createTheme,
+} from "@mui/material";
 
 const theme = createTheme({
   palette: {
@@ -76,12 +82,11 @@ export default function Customer() {
                     sx={{
                       color: "text.primary",
                       m: 2,
-                      
                     }}
                   >
                     <TextField
                       sx={{
-                        width: 10/10,
+                        width: 10 / 10,
                         fontSize: 20,
                         fontWeight: "bold",
                         fontFamily: "Poppines",
@@ -94,14 +99,17 @@ export default function Customer() {
                   <Box
                     sx={{
                       color: "#2c3e50",
-                      m:2,
+                      m: 2,
                       borderRadius: 2,
                       fontWeight: "bold",
                       fontFamily: "Poppines",
                       fontSize: 18,
+                      p: 2,
                     }}
                   >
-                    Search Customer :
+                    <Button variant="contained" color="success">
+                      save
+                    </Button>
                   </Box>
                 </Box>
               </ThemeProvider>
