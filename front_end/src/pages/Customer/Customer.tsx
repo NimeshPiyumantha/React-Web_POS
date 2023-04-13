@@ -31,8 +31,8 @@ export default function Customer() {
   return (
     <>
       <Header />
-      <Box sx={{ width: "100%" }} mt={5} margin={1}>
-        <Grid container mt={3}>
+      <Box sx={{ width: "100%", mt: 3 }}>
+        <Grid container gap={8} justifyContent={"center"}>
           <Grid lg={5} md={5} sm={10} xs={11}>
             <Box
               component="form"
@@ -115,11 +115,10 @@ export default function Customer() {
                     <Button
                       variant="contained"
                       color="success"
-                      size="medium"
                       id="btnSaveCustomer"
                       sx={{
                         fontWeight: "bold",
-                        fontSize: 16,
+                        fontSize: "0.8rem",
                       }}
                     >
                       + New
@@ -127,11 +126,10 @@ export default function Customer() {
                     <Button
                       variant="contained"
                       color="primary"
-                      size="medium"
                       id="btnUpdateCustomer"
                       sx={{
                         fontWeight: "bold",
-                        fontSize: 16,
+                        fontSize: "0.8rem",
                       }}
                     >
                       Update
@@ -139,14 +137,13 @@ export default function Customer() {
                     <Button
                       variant="contained"
                       color="error"
-                      size="medium"
                       id="btnDeleteCustomer"
                       sx={{
                         fontWeight: "bold",
-                        fontSize: 16,
+                        fontSize: "0.8rem",
                       }}
                     >
-                     Delete
+                      Delete
                     </Button>
                   </Box>
                 </Box>
