@@ -7,13 +7,9 @@ import {
   ThemeProvider,
   createTheme,
 } from "@mui/material";
-import { yellow } from "@mui/material/colors";
 
 const theme = createTheme({
   palette: {
-    primary: {
-      main: yellow[600],
-    },
     background: {
       paper: "#ecf0f1",
     },
@@ -151,70 +147,82 @@ export default function Customer() {
             </Box>
           </Grid>
           <Grid lg={5} md={5} sm={10} xs={11}>
-            <Box
-              component="form"
-              action="customer"
-              id="customerForm"
-              sx={{
-                "& .MuiTextField-root": { m: 1, width: "70%" },
-              }}
-              noValidate
-              autoComplete="off"
-            >
-              <TextField
+            <ThemeProvider theme={theme}>
+              <Box
                 sx={{
-                  fontSize: 22,
-                  fontWeight: "bold",
-                  fontFamily: "Poppines",
+                  bgcolor: "background.paper",
+                  boxShadow: 2,
+                  borderRadius: 2,
+                  p: 2,
+                  width: "70%",
                 }}
-                id="txtCusId"
-                name="id"
-                label="Customer ID "
-                placeholder="C00-001"
-                InputProps={{
-                  readOnly: true,
-                }}
-              />
+              >
+                <Box
+                  component="form"
+                  action="customer"
+                  id="customerForm"
+                  sx={{
+                    "& .MuiTextField-root": { width: "95%", m: 1 },
+                  }}
+                  noValidate
+                  autoComplete="off"
+                >
+                  <TextField
+                    sx={{
+                      fontSize: 22,
+                      fontWeight: "bold",
+                      fontFamily: "Poppines",
+                    }}
+                    id="txtCusId"
+                    name="id"
+                    label="Customer ID "
+                    placeholder="C00-001"
+                    InputProps={{
+                      readOnly: true,
+                    }}
+                  />
 
-              <TextField
-                sx={{
-                  fontSize: 22,
-                  fontWeight: "bold",
-                  fontFamily: "Poppines",
-                }}
-                id="txtCusName"
-                name="name"
-                label="Customer Name "
-                placeholder="Nimesh"
-                required
-              />
+                  <TextField
+                    sx={{
+                      fontSize: 22,
+                      fontWeight: "bold",
+                      fontFamily: "Poppines",
+                    }}
+                    id="txtCusName"
+                    name="name"
+                    label="Customer Name :"
+                    placeholder="Nimesh"
+                    required
+                  />
 
-              <TextField
-                sx={{
-                  fontSize: 22,
-                  fontWeight: "bold",
-                  fontFamily: "Poppines",
-                }}
-                id="txtCusAddress"
-                name="address"
-                label="Customer Address "
-                placeholder="Galle"
-                required
-              />
+                  <TextField
+                    sx={{
+                      fontSize: 22,
+                      fontWeight: "bold",
+                      fontFamily: "Poppines",
+                    }}
+                    id="txtCusAddress"
+                    name="address"
+                    label="Customer Address "
+                    placeholder="Galle"
+                    required
+                  />
 
-              <TextField
-                sx={{
-                  fontSize: 22,
-                  fontWeight: "bold",
-                  fontFamily: "Poppines",
-                }}
-                id="txtCustomerSalary"
-                name="salary"
-                label="Customer Salary "
-                placeholder="80000"
-                required
-              />
-            </Box>
+                  <TextField
+                    sx={{
+                      fontSize: 22,
+                      fontWeight: "bold",
+                      fontFamily: "Poppines",
+                    }}
+                    id="txtCustomerSalary"
+                    name="salary"
+                    label="Customer Salary "
+                    placeholder="80000"
+                    required
+                  />
+                </Box>
+              </Box>
+            </ThemeProvider>
           </Grid>
         </Grid>
       </Box>
