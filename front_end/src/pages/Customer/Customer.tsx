@@ -7,9 +7,13 @@ import {
   ThemeProvider,
   createTheme,
 } from "@mui/material";
+import { yellow } from "@mui/material/colors";
 
 const theme = createTheme({
   palette: {
+    primary: {
+      main: yellow[600],
+    },
     background: {
       paper: "#ecf0f1",
     },
@@ -101,7 +105,7 @@ export default function Customer() {
                   <Box
                     sx={{
                       color: "#2c3e50",
-                    
+                      gap: 2,
                       mr: 2,
                       ml: 2,
                       borderRadius: 2,
@@ -109,10 +113,24 @@ export default function Customer() {
                       fontFamily: "Poppines",
                       fontSize: 18,
                       p: 2,
+                      "& button": { m: 1 },
                     }}
                   >
-                    <Button variant="contained" color="success" size="medium" id="btnSaveCustomer">
+                    <Button
+                      variant="contained"
+                      color="success"
+                      size="medium"
+                      id="btnSaveCustomer"
+                    >
                       + New Customer
+                    </Button>
+                    <Button
+                      variant="contained"
+                      color="primary"
+                      size="medium"
+                      id="btnUpdateCustomer"
+                    >
+                      Update Customer
                     </Button>
                   </Box>
                 </Box>
