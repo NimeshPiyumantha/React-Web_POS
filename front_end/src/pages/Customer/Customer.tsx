@@ -32,7 +32,7 @@ export default function Customer() {
     <>
       <Header />
       <Box sx={{ width: "100%", mt: 3 }}>
-        <Grid container gap={8} justifyContent={"center"}>
+        <Grid container gap={7} justifyContent={"center"}>
           <Grid lg={5} md={5} sm={10} xs={11}>
             <Box
               component="form"
@@ -148,6 +148,32 @@ export default function Customer() {
                   </Box>
                 </Box>
               </ThemeProvider>
+            </Box>
+          </Grid>
+          <Grid lg={5} md={5} sm={10} xs={11}>
+            <Box
+              component="form"
+              sx={{
+                "& .MuiTextField-root": { m: 1, width: "70%" },
+              }}
+              noValidate
+              autoComplete="off"
+            >
+              <TextField
+                sx={{
+                  fontSize: 22,
+                  fontWeight: "bold",
+                  fontFamily: "Poppines",
+                }}
+                id="txtCusId"
+                label="Customer ID :"
+                placeholder="C00-001"
+                InputProps={{
+                  readOnly: true,
+                }}
+              />
+
+     
             </Box>
           </Grid>
         </Grid>
