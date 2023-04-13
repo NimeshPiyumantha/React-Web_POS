@@ -33,7 +33,7 @@ export default function Customer() {
       <Header />
       <Box sx={{ width: "100%" }} mt={5} margin={1}>
         <Grid container mt={3}>
-          <Grid lg={4.5} md={6} sm={10} xs={11}>
+          <Grid lg={5} md={5} sm={10} xs={11}>
             <Box
               component="form"
               sx={{
@@ -108,10 +108,6 @@ export default function Customer() {
                       gap: 2,
                       mr: 2,
                       ml: 2,
-                      borderRadius: 2,
-                      fontWeight: "bold",
-                      fontFamily: "Poppines",
-                      fontSize: 18,
                       p: 2,
                       "& button": { m: 1 },
                     }}
@@ -121,16 +117,36 @@ export default function Customer() {
                       color="success"
                       size="medium"
                       id="btnSaveCustomer"
+                      sx={{
+                        fontWeight: "bold",
+                        fontSize: 16,
+                      }}
                     >
-                      + New Customer
+                      + New
                     </Button>
                     <Button
                       variant="contained"
                       color="primary"
                       size="medium"
                       id="btnUpdateCustomer"
+                      sx={{
+                        fontWeight: "bold",
+                        fontSize: 16,
+                      }}
                     >
-                      Update Customer
+                      Update
+                    </Button>
+                    <Button
+                      variant="contained"
+                      color="error"
+                      size="medium"
+                      id="btnDeleteCustomer"
+                      sx={{
+                        fontWeight: "bold",
+                        fontSize: 16,
+                      }}
+                    >
+                     Delete
                     </Button>
                   </Box>
                 </Box>
