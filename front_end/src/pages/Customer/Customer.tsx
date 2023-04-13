@@ -173,7 +173,27 @@ export default function Customer() {
                 }}
               />
 
-     
+              <TextField
+                sx={{
+                  fontSize: 22,
+                  fontWeight: "bold",
+                  fontFamily: "Poppines",
+                }}
+                id="txtCusName"
+                label="Customer Name :"
+                placeholder="Nimesh"
+              />
+
+              <TextField
+                sx={{
+                  fontSize: 22,
+                  fontWeight: "bold",
+                  fontFamily: "Poppines",
+                }}
+                id="txtCusAddress"
+                label="Customer Address :"
+                placeholder="Galle"
+              />
             </Box>
           </Grid>
         </Grid>
