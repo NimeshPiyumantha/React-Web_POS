@@ -153,6 +153,8 @@ export default function Customer() {
           <Grid lg={5} md={5} sm={10} xs={11}>
             <Box
               component="form"
+              action="customer"
+              id="customerForm"
               sx={{
                 "& .MuiTextField-root": { m: 1, width: "70%" },
               }}
@@ -166,7 +168,8 @@ export default function Customer() {
                   fontFamily: "Poppines",
                 }}
                 id="txtCusId"
-                label="Customer ID :"
+                name="id"
+                label="Customer ID "
                 placeholder="C00-001"
                 InputProps={{
                   readOnly: true,
@@ -180,8 +183,10 @@ export default function Customer() {
                   fontFamily: "Poppines",
                 }}
                 id="txtCusName"
-                label="Customer Name :"
+                name="name"
+                label="Customer Name "
                 placeholder="Nimesh"
+                required
               />
 
               <TextField
@@ -191,8 +196,23 @@ export default function Customer() {
                   fontFamily: "Poppines",
                 }}
                 id="txtCusAddress"
-                label="Customer Address :"
+                name="address"
+                label="Customer Address "
                 placeholder="Galle"
+                required
+              />
+
+              <TextField
+                sx={{
+                  fontSize: 22,
+                  fontWeight: "bold",
+                  fontFamily: "Poppines",
+                }}
+                id="txtCustomerSalary"
+                name="salary"
+                label="Customer Salary "
+                placeholder="80000"
+                required
               />
             </Box>
           </Grid>
