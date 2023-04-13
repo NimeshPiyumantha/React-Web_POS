@@ -38,7 +38,6 @@ export default function Customer() {
               noValidate
               autoComplete="off"
             >
-              {" "}
               <ThemeProvider theme={theme}>
                 <Box
                   sx={{
@@ -180,6 +179,7 @@ export default function Customer() {
                     InputProps={{
                       readOnly: true,
                     }}
+                    size="small"
                   />
 
                   <TextField
@@ -193,6 +193,7 @@ export default function Customer() {
                     label="Customer Name :"
                     placeholder="Nimesh"
                     required
+                    size="small"
                   />
 
                   <TextField
@@ -206,6 +207,7 @@ export default function Customer() {
                     label="Customer Address "
                     placeholder="Galle"
                     required
+                    size="small"
                   />
 
                   <TextField
@@ -219,6 +221,7 @@ export default function Customer() {
                     label="Customer Salary "
                     placeholder="80000"
                     required
+                    size="small"
                   />
                 </Box>
               </Box>
