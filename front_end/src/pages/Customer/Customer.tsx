@@ -161,7 +161,7 @@ export default function Customer() {
                   action="customer"
                   id="customerForm"
                   sx={{
-                    "& .MuiTextField-root": { width: "95%", m: 1 },
+                    "& .MuiTextField-root": { width: "95%", m: 2 },
                   }}
                   noValidate
                   autoComplete="off"
