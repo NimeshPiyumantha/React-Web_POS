@@ -3,6 +3,13 @@ import Header from "../../component/Header/Header";
 import {
   Button,
   Grid,
+  Paper,
+  Table,
+  TableBody,
+  TableCell,
+  TableContainer,
+  TableHead,
+  TableRow,
   TextField,
   ThemeProvider,
   createTheme,
@@ -245,8 +252,35 @@ export default function Customer() {
 
         <Grid container justifyContent={"center"}>
           {/* Table Section */}
-          <Grid lg={5} md={5} sm={10} xs={11}></Grid>
-        </Grid>
+          <TableContainer component={Paper}>
+      <Table sx={{ minWidth: 650 }} aria-label="simple table">
+        <TableHead>
+          <TableRow>
+            <TableCell>Dessert (100g serving)</TableCell>
+            <TableCell align="right">Customer ID</TableCell>
+            <TableCell align="right">Customer Name</TableCell>
+            <TableCell align="right">Customer Address</TableCell>
+            <TableCell align="right">Customer Salary&nbsp;(rs)</TableCell>
+          </TableRow>
+        </TableHead>
+        <TableBody>
+          {rows.map((row) => (
+            <TableRow
+              key={row.name}
+              sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
+            >
+              <TableCell component="th" scope="row">
+                {row.name}
+              </TableCell>
+              <TableCell align="right">{row.calories}</TableCell>
+              <TableCell align="right">{row.fat}</TableCell>
+              <TableCell align="right">{row.carbs}</TableCell>
+              <TableCell align="right">{row.protein}</TableCell>
+            </TableRow>
+          ))}
+        </TableBody>
+      </Table>
+    </TableContainer>
       </Box>
     </>
   );
