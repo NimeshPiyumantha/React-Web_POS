@@ -13,6 +13,8 @@ import {
   TextField,
   ThemeProvider,
   createTheme,
+  styled,
+  tableCellClasses,
 } from "@mui/material";
 
 function createData(id: string, name: string, address: string, salary: number) {
@@ -40,6 +42,16 @@ const theme = createTheme({
     },
   },
 });
+
+const StyledTableCell = styled(TableCell)(({ theme }) => ({
+  [`&.${tableCellClasses.head}`]: {
+    backgroundColor: theme.palette.common.black,
+    color: theme.palette.common.white,
+  },
+  [`&.${tableCellClasses.body}`]: {
+    fontSize: 14,
+  },
+}));
 
 export default function Customer() {
   return (
@@ -250,29 +262,25 @@ export default function Customer() {
           </Grid>
         </Grid>
 
-        <Grid container p={5} justifyContent={"center"}>
-
+        <Grid container p={8} justifyContent={"center"}>
           {/* Table Section */}
           <TableContainer component={Paper}>
-            <Table sx={{ minWidth: 650 }} aria-label="simple table">
+            <Table sx={{ minWidth: 700 }} aria-label="customized table">
               <TableHead>
                 <TableRow>
-                  <TableCell>Dessert (100g serving)</TableCell>
                   <TableCell align="right">Customer ID</TableCell>
                   <TableCell align="right">Customer Name</TableCell>
                   <TableCell align="right">Customer Address</TableCell>
-                  <TableCell align="right">Customer Salary&nbsp;(rs)</TableCell>
+                  <TableCell align="right">Customer Salary&nbsp;(Rs)</TableCell>
                 </TableRow>
               </TableHead>
+              
               <TableBody>
                 {rows.map((row) => (
                   <TableRow
-                    key={row.name}
+                    key={row.id}
                     sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
                   >
-                    <TableCell component="th" scope="row">
-                      {row.name}
-                    </TableCell>
                     <TableCell align="right">{row.id}</TableCell>
                     <TableCell align="right">{row.name}</TableCell>
                     <TableCell align="right">{row.address}</TableCell>
@@ -282,7 +290,6 @@ export default function Customer() {
               </TableBody>
             </Table>
           </TableContainer>
-
         </Grid>
       </Box>
     </>
