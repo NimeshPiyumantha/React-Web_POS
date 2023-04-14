@@ -12,6 +12,13 @@ function createData(id: string, name: string, address: string, salary: number) {
   return { id, name, address, salary };
 }
 
+const rows = [
+  createData("C00-001", "Nimesh", "Galle", 80000),
+  createData("C00-002", "Nimesh", "Galle", 80000),
+  createData("C00-003", "Nimesh", "Galle", 80000),
+  createData("C00-004", "Nimesh", "Galle", 80000),
+];
+
 const theme = createTheme({
   palette: {
     background: {
