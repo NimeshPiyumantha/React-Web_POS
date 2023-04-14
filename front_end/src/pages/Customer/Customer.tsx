@@ -278,22 +278,28 @@ export default function Customer() {
             <Table sx={{ minWidth: 700 }} aria-label="customized table">
               <TableHead>
                 <TableRow>
-                  <TableCell align="right">Customer ID</TableCell>
-                  <TableCell align="right">Customer Name</TableCell>
-                  <TableCell align="right">Customer Address</TableCell>
-                  <TableCell align="right">Customer Salary&nbsp;(Rs)</TableCell>
+                  <StyledTableCell align="right">Customer ID</StyledTableCell>
+                  <StyledTableCell align="right">Customer Name</StyledTableCell>
+                  <StyledTableCell align="right">
+                    Customer Address
+                  </StyledTableCell>
+                  <StyledTableCell align="right">
+                    Customer Salary&nbsp;(Rs)
+                  </StyledTableCell>
                 </TableRow>
               </TableHead>
 
               <TableBody>
                 {rows.map((row) => (
-                  <TableRow
-                    key={row.id}
-                  >
-                    <TableCell align="right">{row.id}</TableCell>
-                    <TableCell align="right">{row.name}</TableCell>
-                    <TableCell align="right">{row.address}</TableCell>
-                    <TableCell align="right">{row.salary}</TableCell>
+                  <TableRow key={row.id}>
+                    <StyledTableCell align="right">{row.id}</StyledTableCell>
+                    <StyledTableCell align="right">{row.name}</StyledTableCell>
+                    <StyledTableCell align="right">
+                      {row.address}
+                    </StyledTableCell>
+                    <StyledTableCell align="right">
+                      {row.salary}
+                    </StyledTableCell>
                   </TableRow>
                 ))}
               </TableBody>
