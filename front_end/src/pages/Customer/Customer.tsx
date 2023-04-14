@@ -231,6 +231,16 @@ export default function Customer() {
             </ThemeProvider>
           </Grid>
         </Grid>
+
+        <Grid container justifyContent={"center"}>
+          {/* Table Section */}
+          <Grid lg={5} md={5} sm={10} xs={11}>
+            
+          </Grid>
+
+         
+        </Grid>
+
       </Box>
     </>
   );
