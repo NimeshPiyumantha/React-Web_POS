@@ -237,8 +237,6 @@ export default function Customer() {
           <Grid lg={5} md={5} sm={10} xs={11}>
             
           </Grid>
-
-         
         </Grid>
 
       </Box>
