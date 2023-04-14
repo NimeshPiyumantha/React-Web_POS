@@ -29,7 +29,7 @@ export default function Customer() {
       <Header />
       <Box sx={{ width: "100%", mt: 3 }}>
         <Grid container gap={7} justifyContent={"center"}>
-          
+
           <Grid lg={5} md={5} sm={10} xs={11}>
             <Box
               component="form"
@@ -146,6 +146,7 @@ export default function Customer() {
               </ThemeProvider>
             </Box>
           </Grid>
+          
           <Grid lg={5} md={5} sm={10} xs={11}>
             <ThemeProvider theme={theme}>
               <Box
