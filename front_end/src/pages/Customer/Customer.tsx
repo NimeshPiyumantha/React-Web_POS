@@ -8,6 +8,10 @@ import {
   createTheme,
 } from "@mui/material";
 
+function createData(id: string, name: string, address: string, salary: number) {
+  return { id, name, address, salary };
+}
+
 const theme = createTheme({
   palette: {
     background: {
