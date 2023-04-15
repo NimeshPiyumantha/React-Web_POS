@@ -7,7 +7,13 @@ export default function Item() {
     <>
       <Header />
       <Box sx={{ width: "100%", mt: 3 }}>
-      
+      <Grid container gap={7} justifyContent={"center"}>
+         
+
+         
+        </Grid>
+
+       
       </Box>
     </>
   );
