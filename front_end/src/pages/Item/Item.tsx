@@ -237,7 +237,10 @@ export default function Item() {
         <Grid container p={8} justifyContent={"center"}>
           {/* Table Section */}
           <TableContainer component={Paper}>
-           
+            <Table sx={{ minWidth: 700 }} aria-label="customized table">
+            
+              
+            </Table>
           </TableContainer>
         </Grid>
       </Box>
