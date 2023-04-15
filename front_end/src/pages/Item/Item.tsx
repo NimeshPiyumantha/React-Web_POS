@@ -129,7 +129,17 @@ export default function Item() {
           {/* Text Section */}
           <Grid lg={5} md={5} sm={10} xs={11}>
             <ThemeProvider theme={theme}>
-             
+              <Box
+                sx={{
+                  bgcolor: "background.paper",
+                  boxShadow: 2,
+                  borderRadius: 2,
+                  p: 2,
+                  width: "70%",
+                }}
+              >
+              
+              </Box>
             </ThemeProvider>
           </Grid>
         </Grid>
