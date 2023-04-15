@@ -1,4 +1,11 @@
-import { Box, Button, Grid, TextField, ThemeProvider, createTheme } from "@mui/material";
+import {
+  Box,
+  Button,
+  Grid,
+  TextField,
+  ThemeProvider,
+  createTheme,
+} from "@mui/material";
 import Header from "../../component/Header";
 import { theme } from "../../component/Them/Them";
 
@@ -7,7 +14,7 @@ export default function Item() {
     <>
       <Header />
       <Box sx={{ width: "100%", mt: 3 }}>
-      <Grid container gap={7} justifyContent={"center"}>
+        <Grid container gap={7} justifyContent={"center"}>
           {/* Search & Manage Section */}
           <Grid lg={5} md={5} sm={10} xs={11}>
             <Box
@@ -210,8 +217,6 @@ export default function Item() {
             </ThemeProvider>
           </Grid>
         </Grid>
-
-       
       </Box>
     </>
   );
