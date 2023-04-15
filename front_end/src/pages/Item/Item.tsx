@@ -109,7 +109,17 @@ export default function Item() {
                     >
                       Update
                     </Button>
-        
+                    <Button
+                      variant="contained"
+                      color="error"
+                      id="btnDeleteItem"
+                      sx={{
+                        fontWeight: "bold",
+                        fontSize: "0.8rem",
+                      }}
+                    >
+                      Delete
+                    </Button>
                   </Box>
                 </Box>
               </ThemeProvider>
