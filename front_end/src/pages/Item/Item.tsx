@@ -26,7 +26,23 @@ export default function Item() {
                     borderRadius: 2,
                   }}
                 >
-
+                  <Box
+                    sx={{
+                      color: "#ecf0f1",
+                      bgcolor: "#e74c3c",
+                      pt: 1.5,
+                      pb: 1.5,
+                      pr: 2,
+                      pl: 2,
+                      borderRadius: 2,
+                      textAlign: "center",
+                      fontWeight: "bold",
+                      fontFamily: "Poppines",
+                      fontSize: 22,
+                    }}
+                  >
+                    Manage Item
+                  </Box>
     
      
        
