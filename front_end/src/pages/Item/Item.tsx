@@ -164,7 +164,21 @@ export default function Item() {
                     size="small"
                   />
 
-                
+                  <TextField
+                    sx={{
+                      fontSize: 22,
+                      fontWeight: "bold",
+                      fontFamily: "Poppines",
+                    }}
+                    id="txtItemName"
+                    name="description"
+                    label="Item Name :"
+                    placeholder="Bun"
+                    required
+                    size="small"
+                  />
+
+                 
                 </Box>
               </Box>
             </ThemeProvider>
