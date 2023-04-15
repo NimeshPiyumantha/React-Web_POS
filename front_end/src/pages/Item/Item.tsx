@@ -10,7 +10,16 @@ export default function Item() {
       <Grid container gap={7} justifyContent={"center"}>
           {/* Search & Manage Section */}
           <Grid lg={5} md={5} sm={10} xs={11}>
- 
+            <Box
+              component="form"
+              sx={{
+                "& > :not(style)": { m: 1, width: "100%" },
+              }}
+              noValidate
+              autoComplete="off"
+            >
+  
+            </Box>
           </Grid>
 
          
