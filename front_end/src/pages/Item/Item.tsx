@@ -239,7 +239,14 @@ export default function Item() {
           <TableContainer component={Paper}>
             <Table sx={{ minWidth: 700 }} aria-label="customized table">
               <TableHead>
-                
+                <TableRow>
+                  <StyledTableCell align="right">Item Code</StyledTableCell>
+                  <StyledTableCell align="right">Item Name</StyledTableCell>
+                  <StyledTableCell align="right">Item QTY</StyledTableCell>
+                  <StyledTableCell align="right">
+                    Item Price&nbsp;(Rs)
+                  </StyledTableCell>
+                </TableRow>
               </TableHead>
 
               
