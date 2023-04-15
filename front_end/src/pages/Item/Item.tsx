@@ -43,7 +43,20 @@ export default function Item() {
                   >
                     Manage Item
                   </Box>
-    
+                  <Box
+                    sx={{
+                      color: "#2c3e50",
+                      pt: 1.5,
+                      pr: 2,
+                      pl: 2,
+                      borderRadius: 2,
+                      fontWeight: "bold",
+                      fontFamily: "Poppines",
+                      fontSize: 18,
+                    }}
+                  >
+                    Search Item :
+                  </Box>
      
        
                 </Box>
