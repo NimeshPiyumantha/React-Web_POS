@@ -128,7 +128,9 @@ export default function Item() {
 
           {/* Text Section */}
           <Grid lg={5} md={5} sm={10} xs={11}>
-           
+            <ThemeProvider theme={theme}>
+             
+            </ThemeProvider>
           </Grid>
         </Grid>
 
