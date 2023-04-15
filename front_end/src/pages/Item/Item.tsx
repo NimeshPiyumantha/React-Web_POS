@@ -138,7 +138,18 @@ export default function Item() {
                   width: "70%",
                 }}
               >
-              
+                <Box
+                  component="form"
+                  action="item"
+                  id="itemForm"
+                  sx={{
+                    "& .MuiTextField-root": { width: "95%", m: 2 },
+                  }}
+                  noValidate
+                  autoComplete="off"
+                >
+                 
+                </Box>
               </Box>
             </ThemeProvider>
           </Grid>
