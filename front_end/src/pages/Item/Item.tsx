@@ -77,7 +77,18 @@ export default function Item() {
                       variant="outlined"
                     />
                   </Box>
-       
+                  <Box
+                    sx={{
+                      color: "#2c3e50",
+                      gap: 2,
+                      mr: 2,
+                      ml: 2,
+                      p: 2,
+                      "& button": { m: 1 },
+                    }}
+                  >
+
+                  </Box>
                 </Box>
               </ThemeProvider>
             </Box>
