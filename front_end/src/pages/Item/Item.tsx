@@ -148,7 +148,23 @@ export default function Item() {
                   noValidate
                   autoComplete="off"
                 >
-                 
+                  <TextField
+                    sx={{
+                      fontSize: 22,
+                      fontWeight: "bold",
+                      fontFamily: "Poppines",
+                    }}
+                    id="txtItemID"
+                    name="code"
+                    label="Item Code "
+                    placeholder="I00-001"
+                    InputProps={{
+                      readOnly: true,
+                    }}
+                    size="small"
+                  />
+
+                
                 </Box>
               </Box>
             </ThemeProvider>
