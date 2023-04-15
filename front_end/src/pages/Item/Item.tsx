@@ -14,6 +14,8 @@ import {
 import Header from "../../component/Header";
 import { StyledTableCell, theme } from "../../component/Them/Them";
 
+
+
 export default function Item() {
   return (
     <>
@@ -223,7 +225,10 @@ export default function Item() {
           </Grid>
         </Grid>
 
+        <Grid container p={8} justifyContent={"center"}>
+          {/* Table Section */}
        
+        </Grid>
       </Box>
     </>
   );
