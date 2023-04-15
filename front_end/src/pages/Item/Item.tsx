@@ -178,7 +178,21 @@ export default function Item() {
                     size="small"
                   />
 
-                 
+                  <TextField
+                    sx={{
+                      fontSize: 22,
+                      fontWeight: "bold",
+                      fontFamily: "Poppines",
+                    }}
+                    id="txtItemQty"
+                    name="qty"
+                    label="QTY on Hand "
+                    placeholder="100"
+                    required
+                    size="small"
+                  />
+
+                  
                 </Box>
               </Box>
             </ThemeProvider>
