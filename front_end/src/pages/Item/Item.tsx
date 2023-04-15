@@ -98,7 +98,17 @@ export default function Item() {
                     >
                       + New
                     </Button>
-      
+                    <Button
+                      variant="contained"
+                      color="primary"
+                      id="btnUpdateItem"
+                      sx={{
+                        fontWeight: "bold",
+                        fontSize: "0.8rem",
+                      }}
+                    >
+                      Update
+                    </Button>
         
                   </Box>
                 </Box>
