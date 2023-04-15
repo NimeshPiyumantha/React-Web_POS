@@ -1,12 +1,13 @@
+import { Box } from "@mui/material";
 import Header from "../../component/Header";
 
 export default function Item() {
   return (
     <>
       <Header />
-      <div>
-        <h1>item</h1>
-      </div>
+      <Box sx={{ width: "100%", mt: 3 }}>
+       
+      </Box>
     </>
   );
 }
