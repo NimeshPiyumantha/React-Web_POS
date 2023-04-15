@@ -87,7 +87,19 @@ export default function Item() {
                       "& button": { m: 1 },
                     }}
                   >
-
+                    <Button
+                      variant="contained"
+                      color="success"
+                      id="btnAddItem"
+                      sx={{
+                        fontWeight: "bold",
+                        fontSize: "0.8rem",
+                      }}
+                    >
+                      + New
+                    </Button>
+      
+        
                   </Box>
                 </Box>
               </ThemeProvider>
