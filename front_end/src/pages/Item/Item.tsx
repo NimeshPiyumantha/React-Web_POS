@@ -8,7 +8,10 @@ export default function Item() {
       <Header />
       <Box sx={{ width: "100%", mt: 3 }}>
       <Grid container gap={7} justifyContent={"center"}>
-         
+          {/* Search & Manage Section */}
+          <Grid lg={5} md={5} sm={10} xs={11}>
+ 
+          </Grid>
 
          
         </Grid>
