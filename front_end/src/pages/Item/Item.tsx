@@ -251,7 +251,12 @@ export default function Item() {
 
               <TableBody>
                 {rows.map((row) => (
-                 
+                  <TableRow key={row.code}>
+                    <StyledTableCell align="right">{row.code}</StyledTableCell>
+                    <StyledTableCell align="right">{row.name}</StyledTableCell>
+                    <StyledTableCell align="right">{row.qty}</StyledTableCell>
+                    <StyledTableCell align="right">{row.price}</StyledTableCell>
+                  </TableRow>
                 ))}
               </TableBody>
             </Table>
