@@ -14,6 +14,9 @@ import {
 import Header from "../../component/Header";
 import { StyledTableCell, theme } from "../../component/Them/Them";
 
+function createData(code: string, name: string, qty: number, price: number) {
+  return { code, name, qty, price };
+}
 
 
 export default function Item() {
