@@ -242,9 +242,11 @@ export default function Item() {
                 <TableRow>
                   <StyledTableCell align="right">Item Code</StyledTableCell>
                   <StyledTableCell align="right">Item Name</StyledTableCell>
-                  <StyledTableCell align="right">Item QTY</StyledTableCell>
                   <StyledTableCell align="right">
-                    Item Price&nbsp;(Rs)
+                  Item QTY
+                  </StyledTableCell>
+                  <StyledTableCell align="right">
+                  Item Price&nbsp;(Rs)
                   </StyledTableCell>
                 </TableRow>
               </TableHead>
@@ -254,8 +256,12 @@ export default function Item() {
                   <TableRow key={row.code}>
                     <StyledTableCell align="right">{row.code}</StyledTableCell>
                     <StyledTableCell align="right">{row.name}</StyledTableCell>
-                    <StyledTableCell align="right">{row.qty}</StyledTableCell>
-                    <StyledTableCell align="right">{row.price}</StyledTableCell>
+                    <StyledTableCell align="right">
+                      {row.qty}
+                    </StyledTableCell>
+                    <StyledTableCell align="right">
+                      {row.price}
+                    </StyledTableCell>
                   </TableRow>
                 ))}
               </TableBody>
