@@ -192,7 +192,19 @@ export default function Item() {
                     size="small"
                   />
 
-                  
+                  <TextField
+                    sx={{
+                      fontSize: 22,
+                      fontWeight: "bold",
+                      fontFamily: "Poppines",
+                    }}
+                    id="txtItemPrice"
+                    name="unitPrice"
+                    label="Unit Price "
+                    placeholder="80"
+                    required
+                    size="small"
+                  />
                 </Box>
               </Box>
             </ThemeProvider>
