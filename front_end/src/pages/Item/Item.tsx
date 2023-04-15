@@ -65,7 +65,17 @@ export default function Item() {
                       ml: 2,
                     }}
                   >
-                    
+                    <TextField
+                      sx={{
+                        width: 10 / 10,
+                        fontSize: 20,
+                        fontWeight: "bold",
+                        fontFamily: "Poppines",
+                      }}
+                      id="ItemIdSearch"
+                      label="Input Name/Code/Tp Here"
+                      variant="outlined"
+                    />
                   </Box>
        
                 </Box>
