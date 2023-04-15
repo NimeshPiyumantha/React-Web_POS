@@ -2,12 +2,17 @@ import {
   Box,
   Button,
   Grid,
+  Paper,
+  Table,
+  TableBody,
+  TableContainer,
+  TableHead,
+  TableRow,
   TextField,
   ThemeProvider,
-  createTheme,
 } from "@mui/material";
 import Header from "../../component/Header";
-import { theme } from "../../component/Them/Them";
+import { StyledTableCell, theme } from "../../component/Them/Them";
 
 export default function Item() {
   return (
@@ -218,7 +223,7 @@ export default function Item() {
           </Grid>
         </Grid>
 
-        
+       
       </Box>
     </>
   );
