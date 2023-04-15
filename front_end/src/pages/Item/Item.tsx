@@ -18,6 +18,12 @@ function createData(code: string, name: string, qty: number, price: number) {
   return { code, name, qty, price };
 }
 
+const rows = [
+  createData("I00-001", "Bun", 100, 80),
+  createData("I00-002", "Bun", 100, 80),
+  createData("I00-003", "Bun", 100, 80),
+  createData("I00-004", "Bun", 100, 80),
+];
 
 export default function Item() {
   return (
