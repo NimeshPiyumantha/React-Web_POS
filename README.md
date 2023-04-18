@@ -8,11 +8,6 @@
 * React
 * Node
 * TailwindCSS
-
-
-
-
-
 ### Link
 
 
